@@ -26,6 +26,7 @@ install()
     inst rbd
     inst ceph-rbdnamer
 	inst /etc/ceph/ceph.conf
+    inst /etc/ceph/ceph.client.diskless-client.keyring
 	# shellcheck disable=SC2154
     inst_hook cmdline 90 "$moddir/parse-rbdroot.sh"
     inst_script "$moddir/rbdroot.sh" "/sbin/rbdroot"
