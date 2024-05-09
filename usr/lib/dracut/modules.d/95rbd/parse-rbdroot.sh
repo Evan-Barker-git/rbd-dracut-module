@@ -1,7 +1,7 @@
-#! /bin/sh
+#!/bin/sh
 
 # Required format:
-#       root=rbd:pool:name:fstype:rootflags
+#       root=/dev/diskless-image/${imagename} netroot=rbd:pool:name:fstype:rootflags
 
 # Sadly there's no easy way to split ':' separated lines into variables
 root_to_vars()
